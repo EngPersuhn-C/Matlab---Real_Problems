@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--     This file was written by Grafos software.    -->
+<!--     http://arodrigu.webs.upv.es/grafos     -->
+<!-- (cc) 2003..2012 - Alejandro Rodriguez Villalobos -->
+<!-- Fecha: 15/09/2022 -->
+<!-- Version: 1.3.5  -->
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns 
+                                http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!--     Declaración de atributos   -->
+
+<!--     Atributos del grafo  -->
+<!--     Atributos del tapiz por defecto  -->
+<key id="GtIT" for="graph" attr.name="GImgTapiz" attr.type="string">
+<default></default>
+</key>
+<key id="GtMIT" for="graph" attr.name="GMImgTapiz" attr.type="boolean">
+<default>False</default>
+</key>
+<key id="GvZ" for="graph" attr.name="GZoom" attr.type="float">
+<default>1,11296</default>
+</key>
+<key id="GvR" for="graph" attr.name="GRejilla" attr.type="float">
+<default>40</default>
+</key>
+<key id="GvMR" for="graph" attr.name="GMostrarRejilla" attr.type="boolean">
+<default>True</default>
+</key>
+<key id="GvI" for="graph" attr.name="GIman" attr.type="boolean">
+<default>True</default>
+</key>
+<key id="GtX" for="graph" attr.name="GTapizX" attr.type="float">
+<default>800</default>
+</key>
+<key id="GtY" for="graph" attr.name="GTapizY" attr.type="float">
+<default>800</default>
+</key>
+<!--     Atributos del color rejilla por defecto  -->
+<key id="GrCA" for="graph" attr.name="GColorARejilla" attr.type="int">
+<default>255</default>
+</key>
+<key id="GrCR" for="graph" attr.name="GColorRRejilla" attr.type="int">
+<default>211</default>
+</key>
+<key id="GrCG" for="graph" attr.name="GColorGRejilla" attr.type="int">
+<default>211</default>
+</key>
+<key id="GrCB" for="graph" attr.name="GColorBRejilla" attr.type="int">
+<default>211</default>
+</key>
+<!--     Atributos del color tapiz por defecto  -->
+<key id="GtCA" for="graph" attr.name="GColorATapiz" attr.type="int">
+<default>255</default>
+</key>
+<key id="GtCR" for="graph" attr.name="GColorRTapiz" attr.type="int">
+<default>255</default>
+</key>
+<key id="GtCG" for="graph" attr.name="GColorGTapiz" attr.type="int">
+<default>255</default>
+</key>
+<key id="GtCB" for="graph" attr.name="GColorBTapiz" attr.type="int">
+<default>255</default>
+</key>
+<!--     Atributos del tipo de letra por defecto  -->
+<key id="GfN" for="graph" attr.name="GFontName" attr.type="string">
+<default>Microsoft Sans Serif</default>
+</key>
+<key id="GfS" for="graph" attr.name="GFontSize" attr.type="float">
+<default>8,25</default>
+</key>
+<key id="GfSt" for="graph" attr.name="GFontStyle" attr.type="float">
+<default>0</default>
+</key>
+
+<!--     Atributos del nodo por defecto  -->
+<key id="GnT" for="graph" attr.name="GTextoNodo" attr.type="boolean">
+<default>True</default>
+</key>
+<key id="GnX" for="graph" attr.name="GposXNodo" attr.type="float">
+<default>0</default>
+</key>
+<key id="GnY" for="graph" attr.name="GposYNodo" attr.type="float">
+<default>0</default>
+</key>
+<key id="GnZ" for="graph" attr.name="GposZNodo" attr.type="float">
+<default>0</default>
+</key>
+<key id="GnV" for="graph" attr.name="GValorNodo" attr.type="boolean">
+<default>True</default>
+</key>
+<key id="GnR" for="graph" attr.name="GRadioNodo" attr.type="float">
+<default>15</default>
+</key>
+<key id="GnG" for="graph" attr.name="GGrosorNodo" attr.type="float">
+<default>1</default>
+</key>
+<key id="GnCA" for="graph" attr.name="GColorANodo" attr.type="int">
+<default>255</default>
+</key>
+<key id="GnCR" for="graph" attr.name="GColorRNodo" attr.type="int">
+<default>176</default>
+</key>
+<key id="GnCG" for="graph" attr.name="GColorGNodo" attr.type="int">
+<default>196</default>
+</key>
+<key id="GnCB" for="graph" attr.name="GColorBNodo" attr.type="int">
+<default>222</default>
+</key>
+<key id="GnEn" for="graph" attr.name="GEstiloNodo" attr.type="int">
+<default>0</default>
+</key>
+
+<!--     Atributos del arco por defecto  -->
+<key id="GaMin" for="graph" attr.name="GMinArco" attr.type="boolean">
+<default>True</default>
+</key>
+<key id="GaMax" for="graph" attr.name="GMaxArco" attr.type="boolean">
+<default>True</default>
+</key>
+<key id="GaC" for="graph" attr.name="GCosteArco" attr.type="boolean">
+<default>True</default>
+</key>
+<key id="GaT" for="graph" attr.name="GTextoArco" attr.type="boolean">
+<default>False</default>
+</key>
+<key id="GaB" for="graph" attr.name="GBArco" attr.type="boolean">
+<default>False</default>
+</key>
+<key id="GaG" for="graph" attr.name="GGrosorArco" attr.type="float">
+<default>1</default>
+</key>
+<key id="GaEPF" for="graph" attr.name="GEstiloPFArco" attr.type="int">
+<default>1</default>
+</key>
+<key id="GaCA" for="graph" attr.name="GColorAArco" attr.type="int">
+<default>255</default>
+</key>
+<key id="GaCR" for="graph" attr.name="GColorRArco" attr.type="int">
+<default>0</default>
+</key>
+<key id="GaCG" for="graph" attr.name="GColorGArco" attr.type="int">
+<default>0</default>
+</key>
+<key id="GaCB" for="graph" attr.name="GColorBArco" attr.type="int">
+<default>0</default>
+</key>
+
+<!--     Atributos para los nodos  -->
+<key id="nT" for="node" attr.name="TextoNodo" attr.type="string">
+<default> </default>
+</key>
+<key id="nX" for="node" attr.name="posXNodo" attr.type="float">
+<default>0</default>
+</key>
+<key id="nY" for="node" attr.name="posYNodo" attr.type="float">
+<default>0</default>
+</key>
+<key id="nZ" for="node" attr.name="posZNodo" attr.type="float">
+<default>0</default>
+</key>
+<key id="nV" for="node" attr.name="ValorNodo" attr.type="float">
+<default>0</default>
+</key>
+<key id="nR" for="node" attr.name="RadioNodo" attr.type="float">
+<default>15</default>
+</key>
+<key id="nG" for="node" attr.name="GrosorNodo" attr.type="float">
+<default>1</default>
+</key>
+<key id="nCA" for="node" attr.name="ColorANodo" attr.type="int">
+<default>255</default>
+</key>
+<key id="nCR" for="node" attr.name="ColorRNodo" attr.type="int">
+<default>176</default>
+</key>
+<key id="nCG" for="node" attr.name="ColorGNodo" attr.type="int">
+<default>196</default>
+</key>
+<key id="nCB" for="node" attr.name="ColorBNodo" attr.type="int">
+<default>222</default>
+</key>
+<key id="nEn" for="node" attr.name="EstiloNodo" attr.type="int">
+<default>0</default>
+</key>
+
+<!--     Atributos para los arcos  -->
+<key id="aT" for="edge" attr.name="TextoArco" attr.type="string">
+<default> </default>
+</key>
+<key id="aMin" for="edge" attr.name="MinArco" attr.type="float">
+<default>0</default>
+</key>
+<key id="aMax" for="edge" attr.name="MaxArco" attr.type="float">
+<default>0</default>
+</key>
+<key id="aC" for="edge" attr.name="CosteArco" attr.type="float">
+<default>0</default>
+</key>
+<key id="aB" for="edge" attr.name="BArco" attr.type="boolean">
+<default>False</default>
+</key>
+<key id="aG" for="edge" attr.name="GrosorArco" attr.type="float">
+<default>1</default>
+</key>
+<key id="aEPF" for="edge" attr.name="EstiloPFArco" attr.type="int">
+<default>1</default>
+</key>
+<key id="aCA" for="edge" attr.name="ColorAArco" attr.type="int">
+<default>255</default>
+</key>
+<key id="aCR" for="edge" attr.name="ColorRArco" attr.type="int">
+<default>0</default>
+</key>
+<key id="aCG" for="edge" attr.name="ColorGArco" attr.type="int">
+<default>0</default>
+</key>
+<key id="aCB" for="edge" attr.name="ColorBArco" attr.type="int">
+<default>0</default>
+</key>
+
+<!--     Definición del grafo  -->
+<graph id="Grafo" edgedefault="directed" 
+            parse.nodes="7" parse.edges="30" 
+            parse.nodeids="canonical" parse.edgeids="canonical" 
+            parse.order="nodesfirst">
+
+<!--     Definición de los nodos  -->
+    <node id="n0">
+    <data key="nT">1</data>
+    <data key="nX">600</data>
+    <data key="nY">680</data>
+    <data key="nZ">0</data>
+    <data key="nV">0</data>
+    <data key="nR">15</data>
+    <data key="nG">1</data>
+    <data key="nCA">255</data>
+    <data key="nCR">176</data>
+    <data key="nCG">196</data>
+    <data key="nCB">222</data>
+    <data key="nEn">0</data>
+    </node>
+    <node id="n1">
+    <data key="nT">2</data>
+    <data key="nX">160</data>
+    <data key="nY">640</data>
+    <data key="nZ">0</data>
+    <data key="nV">0</data>
+    <data key="nR">15</data>
+    <data key="nG">1</data>
+    <data key="nCA">255</data>
+    <data key="nCR">176</data>
+    <data key="nCG">196</data>
+    <data key="nCB">222</data>
+    <data key="nEn">0</data>
+    </node>
+    <node id="n2">
+    <data key="nT">3</data>
+    <data key="nX">320</data>
+    <data key="nY">560</data>
+    <data key="nZ">0</data>
+    <data key="nV">0</data>
+    <data key="nR">15</data>
+    <data key="nG">1</data>
+    <data key="nCA">255</data>
+    <data key="nCR">176</data>
+    <data key="nCG">196</data>
+    <data key="nCB">222</data>
+    <data key="nEn">0</data>
+    </node>
+    <node id="n3">
+    <data key="nT">4</data>
+    <data key="nX">520</data>
+    <data key="nY">520</data>
+    <data key="nZ">0</data>
+    <data key="nV">0</data>
+    <data key="nR">15</data>
+    <data key="nG">1</data>
+    <data key="nCA">255</data>
+    <data key="nCR">176</data>
+    <data key="nCG">196</data>
+    <data key="nCB">222</data>
+    <data key="nEn">0</data>
+    </node>
+    <node id="n4">
+    <data key="nT">5</data>
+    <data key="nX">640</data>
+    <data key="nY">400</data>
+    <data key="nZ">0</data>
+    <data key="nV">0</data>
+    <data key="nR">15</data>
+    <data key="nG">1</data>
+    <data key="nCA">255</data>
+    <data key="nCR">176</data>
+    <data key="nCG">196</data>
+    <data key="nCB">222</data>
+    <data key="nEn">0</data>
+    </node>
+    <node id="n5">
+    <data key="nT">6</data>
+    <data key="nX">80</data>
+    <data key="nY">400</data>
+    <data key="nZ">0</data>
+    <data key="nV">0</data>
+    <data key="nR">15</data>
+    <data key="nG">1</data>
+    <data key="nCA">255</data>
+    <data key="nCR">176</data>
+    <data key="nCG">196</data>
+    <data key="nCB">222</data>
+    <data key="nEn">0</data>
+    </node>
+    <node id="n6">
+    <data key="nT">7</data>
+    <data key="nX">280</data>
+    <data key="nY">360</data>
+    <data key="nZ">0</data>
+    <data key="nV">0</data>
+    <data key="nR">15</data>
+    <data key="nG">1</data>
+    <data key="nCA">255</data>
+    <data key="nCR">176</data>
+    <data key="nCG">196</data>
+    <data key="nCB">222</data>
+    <data key="nEn">0</data>
+    </node>
+<!--     Definición de los arcos  -->
+    <edge id="e0" source="n1" target="n0">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,7</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">0</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e1" source="n2" target="n0">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">2</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e2" source="n4" target="n0">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">2</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e3" source="n0" target="n1">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,7</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e4" source="n2" target="n1">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">0,5</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e5" source="n4" target="n1">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">2</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e6" source="n5" target="n1">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,1</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e7" source="n6" target="n1">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,6</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">0</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e8" source="n0" target="n2">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">2</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e9" source="n1" target="n2">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">0,5</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e10" source="n3" target="n2">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">0,75</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">0</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e11" source="n4" target="n2">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,1</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e12" source="n5" target="n2">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">0,65</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e13" source="n6" target="n2">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,2</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e14" source="n2" target="n3">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">0,75</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e15" source="n4" target="n3">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,2</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">0</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e16" source="n6" target="n3">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">2,1</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e17" source="n0" target="n4">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">2</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">0</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e18" source="n1" target="n4">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">2</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e19" source="n2" target="n4">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,1</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e20" source="n3" target="n4">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,2</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e21" source="n6" target="n4">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,2</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e22" source="n1" target="n5">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,1</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e23" source="n2" target="n5">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">0,65</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">0</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e24" source="n6" target="n5">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">0,6</data>
+    <data key="aB">True</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e25" source="n1" target="n6">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,6</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e26" source="n2" target="n6">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,2</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e27" source="n3" target="n6">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">2,1</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e28" source="n4" target="n6">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">1,2</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">255</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+    <edge id="e29" source="n5" target="n6">
+    <data key="aT"></data>
+    <data key="aMin">0</data>
+    <data key="aMax">0</data>
+    <data key="aC">0,6</data>
+    <data key="aB">False</data>
+    <data key="aG">1</data>
+    <data key="aEPF">1</data>
+    <data key="aCA">0</data>
+    <data key="aCR">0</data>
+    <data key="aCG">0</data>
+    <data key="aCB">0</data>
+    </edge>
+</graph>
+</graphml>
