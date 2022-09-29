@@ -6,7 +6,8 @@
 #           Blumenau
 #             2022
 
-#Autors: Bruno Bueno Bronzeri
+#Autors: 
+#        Bruno Bueno Bronzeri
 #        Carlos José Persuhn
 #        David Renan Dickmann
 
